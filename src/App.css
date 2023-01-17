@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition-duration: .2s;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Poppins', sans-serif;
+  color: rgb(32, 33, 36);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.book-layout-grid {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 60px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.book-layout {
+  width: 20vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.book-img {
+  width: 100%;
+}
+
+.book-img img {
+  width: 100%;
+  border: solid 1px rgb(220, 220, 220);
+  border-radius: 10px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 50px rgba(0,0,0,0.35);
+}
+
+.book-img img:hover {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
+
+.book-desc {
+  width: 100%;
+}
+
+.author {
+  color: #777;
+  font-size: 0.8em;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sub-heading {
+  padding: 20px 0;
+  border-top:solid 1px rgb(194, 194, 194);
+  border-bottom:solid 1px rgb(194, 194, 194);
 }
